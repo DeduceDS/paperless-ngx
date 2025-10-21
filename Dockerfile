@@ -264,5 +264,3 @@ VOLUME ["/usr/src/paperless/data", \
 ENTRYPOINT ["/init"]
 
 EXPOSE 8000
-
-HEALTHCHECK --interval=30s --timeout=10s --retries=5 CMD [ "curl", "-fs", "-S", "-L", "--max-time", "2", "http://localhost:8000" ]
