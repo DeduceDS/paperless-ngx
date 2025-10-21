@@ -1,7 +1,7 @@
-site_name: Paperless-ngx
+site_name: Deduce Data Solutions
 theme:
   name: material
-  logo: assets/logo.svg
+  logo: /images/DDS-white.webp
   font:
     text: Roboto
     code: Roboto Mono

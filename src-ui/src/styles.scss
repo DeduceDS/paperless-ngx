@@ -50,6 +50,15 @@ $grid-breakpoints: (
   @each $name, $value in $grid-breakpoints {
     --bs-breakpoint-#{$name}: #{$value};
   }
+
+  /* Brand colors for Deduce Data Solutions */
+  /* Primary: #2e8cff -> approx hsl(213, 83%, 56%) */
+  --pngx-primary: 213, 83%;
+  --pngx-primary-lightness: 56%;
+  --bs-primary: hsl(var(--pngx-primary), var(--pngx-primary-lightness));
+  /* Secondary: #b332e1 -> approx hsl(288, 70%, 49%) */
+  --pngx-secondary: 288, 70%;
+  --bs-secondary: hsl(var(--pngx-secondary), 49%);
 }
 
 @media (min-width: 2400px) {

@@ -1,8 +1,13 @@
 @use "sass:color";
 @mixin paperless-green {
-  // base color e.g. #17541f = hsl(128, 57%, 21%)
-  --pngx-primary: 128, 57%;
-  --pngx-primary-lightness: 21%;
+  // Canonical brand colors for Deduce Data Solutions
+  // Primary: #2e8cff, Secondary: #b332e1
+  --pngx-primary-hex: #2e8cff;
+  --pngx-secondary: #b332e1;
+  // Keep existing HSL-compatible variables for places that use hsl(var(--pngx-primary), ...)
+  // HSL for #2e8cff ≈ 213 100% 59%
+  --pngx-primary: 213, 100%;
+  --pngx-primary-lightness: 59%;
 }
 
 :root {
