@@ -32,9 +32,6 @@ services:
     environment:
       PAPERLESS_REDIS: redis://broker:6379
       PAPERLESS_DBHOST: db
-      # CSRF fix
-      PAPERLESS_URL: https://base-doxia.coolify.deducedata.solutions
-      PAPERLESS_CSRF_TRUSTED_ORIGINS: https://base-doxia.coolify.deducedata.solutions
 volumes:
   data:
   media:
